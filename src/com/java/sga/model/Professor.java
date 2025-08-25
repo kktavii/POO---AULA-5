@@ -1,6 +1,6 @@
 package com.java.sga.model;
 import com.java.sga.util.Validacoes;
-
+// Contrutores
 public class Professor extends Pessoa {
     private String disciplina;
     private String turma;
