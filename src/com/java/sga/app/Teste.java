@@ -1,19 +1,16 @@
 package com.java.sga.app;
-import com.java.sga.model.*;
+
+import com.java.sga.model.Aluno;
+import com.java.sga.util.Validacoes;
 
 public class Teste {
     public static void main(String[] args) {
-        // Teste 1: Criar e testar Aluno
-        System.out.println("=== Teste Aluno ===");
-        Aluno aluno = new Aluno("João Silva", "2024001");
-        aluno.adicionarNota(8.5);
-        aluno.adicionarNota(7.0);
-        aluno.adicionarNota(9.0);
-        System.out.println("Média: " + aluno.calcularMedia());
-        
-        // Teste 2: Criar e testar Professor
-        System.out.println("=== Teste Professor ===");
-        Professor prof = new Professor("Dr. Maria", "POO", "Turma A");
-        System.out.println("Professor criado: " + prof.getNome());
+        // Testando validações
+        System.out.println("Validação de matrícula (12345): " + 
+            Validacoes.validarMatricula("12345"));
+
+        // Testando criação de aluno
+        Aluno a = new Aluno("Carlos Souza", "987654");
+        System.out.println(a);
     }
 }
