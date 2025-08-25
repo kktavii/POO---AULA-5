@@ -1,13 +1,14 @@
 package com.java.sga.model;
 
-public class Pessoa {
+public abstract class Pessoa {
     private String nome;
 
+    // Construtor
     public Pessoa(String nome) {
         this.nome = nome;
     }
 
-    // Getter e Setter
+    // Getters e Setters
     public String getNome() {
         return nome;
     }
