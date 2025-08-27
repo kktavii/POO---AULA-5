@@ -10,7 +10,7 @@ public class Teste {
             Validacoes.validarMatricula("12345"));
 
         // Testando criação de aluno
-        Aluno a = new Aluno("Carlos Souza", "987654");
+        Aluno a = new Aluno("Igor Rocha", "987654");
         System.out.println(a);
     }
 }
